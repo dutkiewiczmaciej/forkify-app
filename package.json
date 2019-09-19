@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "forkify-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dutkiewiczmaciej/forkify-app.git"
+  },
+  "author": "Maciej Dutkiewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dutkiewiczmaciej/forkify-app/issues"
+  },
+  "homepage": "https://github.com/dutkiewiczmaciej/forkify-app#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.40.2"
+  }
+}
