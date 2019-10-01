@@ -36,7 +36,7 @@ export default class Recipe {
  
         const newIngredients = this.ingredients.map(el => {
             // 1) Uniform units
-            let ingredient = el.toLowerCase;
+            let ingredient = el.toLowerCase();
             unitsLong.forEach((unit, i) => {
                 ingredient = ingredient.replace(unit, unitShort[i]);
             });
@@ -61,7 +61,7 @@ export default class Recipe {
                 objIng = {
                     count,
                     unit: arrIng[unitIndex],
-                    ingredient: arrIng.slice(unitIndex+1).join(' ')
+                    ingredient: arrIng.slice(unitIndex + 1).join(' ')
                 };
             } else if (parseInt(arrIng[0], 10)) {
                 // There is no unit but the first element is a number
