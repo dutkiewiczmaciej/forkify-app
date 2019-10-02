@@ -15,14 +15,12 @@ import { elements, renderLoader, clearLoader } from './views/base';
  */
 const state = {};
 
-window.state = state;
 /**
  * SEARCH CONTROLLER
  */
 const controlSearch = async () => {
     // 1) Get query from the view
     const query = searchView.getInput();
-    console.log(query);
 
     if (query) {
         // 2) New search object and add to state
@@ -69,7 +67,6 @@ elements.searchResPages.addEventListener('click', e => {
 const controlRecipe = async () => {
     // Get ID from URL
     const id = window.location.hash.replace('#', '');
-    console.log(id);
 
     if (id) {
         // Prepare UI for changes
@@ -210,7 +207,4 @@ elements.recipe.addEventListener('click', e => {
         controlLike();
     }
 });
-
-window.l = new List();
-
 
